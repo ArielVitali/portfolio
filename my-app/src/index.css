@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,14 +6,30 @@
 
 @layer base {
     body {
-        @apply font-[Raleway];
-    }
+        @apply font-[DM+Sans];
+        @apply dark:text-white; /* Text color for dark mode */
+        @apply text-[#252422];
+        @apply transition  /* Default text color for light mode */
+      }
     li {
         @apply px-4;
         @apply cursor-pointer
     }
 }
 
+.light {
+    background-color: #fffcf2;
+    transition: background-color 0.25s ease-in-out;
+}
+
+
+ /* Add the dark mode background color here */
+.dark {
+  /* Apply styles for dark mode */
+  /* For example, you can change background-color */
+  background-color: #252422;
+  transition: background-color 0.25s ease-in-out;
+}
 .content-div{
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,8 +40,8 @@
 .content-div:hover{
 background-image: linear-gradient(
     to right,
-    rgba(112,157,255,0.8),
-    hsla(242,74%,61%,0.8)
+    #eb5e28,
+    #ff9770
 )!important;
 }
 

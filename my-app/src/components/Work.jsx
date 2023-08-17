@@ -1,5 +1,6 @@
 import React from "react";
 import { data } from "../data/data.js";
+import { motion } from "framer-motion";
 
 const WorkOptimized = () => {
   // projects file
@@ -7,13 +8,25 @@ const WorkOptimized = () => {
   //setProject(data);
 
   return (
-    <div name="work" className="w-full md:h-screen text-gray-300 bg-[#0a192f]">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.5 }}
+      transition={{ duration: 0.5 }}
+      variants={{
+        hidden: { opacity: 0, x: -50 },
+        visible: { opacity: 1, x: 0 },
+      }}
+      name="projects"
+      className="w-full  md:h-[70vh]  "
+    >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
+          <p className="text-4xl font-bold inline border-b-4  border-[#eb5e28]">
             Work
           </p>
-          <p className="py-6">// Check out some of my recent work</p>
+          <p className="hidden py-6">// Check out some of my recent work</p>
+          <p className="py-6">// Coming Soon ...</p>
         </div>
 
         {/* container for projects */}
@@ -56,7 +69,7 @@ const WorkOptimized = () => {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
