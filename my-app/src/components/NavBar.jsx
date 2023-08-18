@@ -38,7 +38,9 @@ const NavBar = () => {
           }}
           className=" w-[60px] sm: ml-3"
         >
-          <MyLogo />
+          <div className="stroke-black dark:stroke-white stroke-[10px]">
+            <MyLogo />
+          </div>
         </motion.div>
       </Link>
 
@@ -168,7 +170,7 @@ const NavBar = () => {
         className={
           !nav
             ? "hidden"
-            : "fixed top-0 left-0 w-full h-full bg-[#ffe6a7] dark:bg-[#a76129] flex flex-col justify-center items-center overflow-hidden"
+            : "fixed top-0 left-0 w-full h-full bg-[#ffe6a7] dark:bg-[#956d61] flex flex-col justify-center items-center overflow-hidden"
         }
       >
         <li className="py-6 text-4xl">

@@ -19,7 +19,7 @@ const Home = () => {
         className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full"
       >
         <p className=" ">Hi, my name is</p>
-        <h1 className="text-4xl sm:text-7xl font-bold ">ARIEL VITALI</h1>
+        <h1 className="text-4xl sm:text-7xl font-semibold ">ARIEL VITALI</h1>
         <h2 className="text-2xl sm:text-5xl ">Software developer</h2>
         <p className="text-[#eb5e28] py-4 max-w-[700px]">
           I'm a full-stack developer specialiced in building digital solutions.
@@ -28,7 +28,7 @@ const Home = () => {
         </p>
 
         <div>
-          <button className="text-[#403d39] group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#eb5e28] hover:border-[#eb5e28] hover:text-[#252422]">
+          <button className="group border-2 px-6 py-3 my-2 flex items-center dark:border-gray-300 border-[#252422] hover:bg-[#eb5e28] ">
             <Link to="projects" smooth={true} duration={500}>
               View work
             </Link>

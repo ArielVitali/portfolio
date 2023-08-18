@@ -54,7 +54,7 @@ const Contact = () => {
           name="Name"
           placeholder="Name"
           id="name"
-          className="bg-[#ffe6a7] p-2"
+          className="bg-[#ffe6a7] dark:bg-[#956d61]  p-2"
           {...register("name", { required: true, maxLength: 50 })}
         />
         {errors.name && (
@@ -68,7 +68,7 @@ const Contact = () => {
           name="email"
           id="email"
           placeholder="Email"
-          className="my-4 p-2 bg-[#ffe6a7]"
+          className="my-4 p-2 bg-[#ffe6a7] dark:bg-[#956d61]"
           {...register("email", { required: true, pattern: /^\S+@\S+$/i })}
         />
         {errors.email && (
@@ -80,7 +80,7 @@ const Contact = () => {
         <textarea
           name="message"
           rows="5"
-          className="bg-[#ffe6a7] p-2"
+          className="bg-[#ffe6a7] dark:bg-[#956d61] p-2"
           placeholder="Message"
           {...register("message", { required: false, maxLength: 400 })}
         ></textarea>
@@ -92,7 +92,7 @@ const Contact = () => {
         <button
           onClick={handleResetForm()}
           type="submit"
-          className=" border-2 hover:bg-[#eb5e28] hover:border-[#eb5e28] px-4 py-3 my-8 mx-auto flex items-center"
+          className=" border-2 dark:border-gray-300 border-[#252422] hover:bg-[#eb5e28]  px-4 py-3 my-8 mx-auto flex items-center"
         >
           Send Message
         </button>{" "}

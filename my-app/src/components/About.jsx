@@ -4,10 +4,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div
-      name="about"
-      className="w-full h-full dark:bg-[#a76129] bg-[#ffe6a7] shadow-2xl "
-    >
+    <div name="about" className="w-full h-full  bg-[#ffe6a7] shadow-2xl ">
       <div className="flex flex-col justify-center items-center w-full h-full ">
         <motion.div
           initial="hidden"

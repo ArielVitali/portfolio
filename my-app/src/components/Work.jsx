@@ -25,8 +25,7 @@ const WorkOptimized = () => {
           <p className="text-4xl font-bold inline border-b-4  border-[#eb5e28]">
             Work
           </p>
-          <p className="hidden py-6">// Check out some of my recent work</p>
-          <p className="py-6">// Coming Soon ...</p>
+          <p className=" py-6">Check out some of my recent work</p>
         </div>
 
         {/* container for projects */}
