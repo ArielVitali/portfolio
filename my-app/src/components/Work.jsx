@@ -1,4 +1,3 @@
-import React from "react";
 import { data } from "../data/data.js";
 import { motion } from "framer-motion";
 

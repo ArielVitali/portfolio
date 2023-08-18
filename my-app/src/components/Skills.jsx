@@ -1,4 +1,3 @@
-import Express from "../assets/coding-logos/Express.jsx";
 import { SiExpress } from "react-icons/si";
 import {
   DiNodejsSmall,
